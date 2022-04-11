@@ -25,7 +25,7 @@ wget -c "$wireguard_ui_url"
 
 tar xfv wireguard-ui*
 sudo cp wireguard-ui /usr/local/bin/
-sudo cp $REPO_DIR/systemd/* /etc/systemd/system/
+sudo cp $REPO_DIR/../systemd/* /etc/systemd/system/
 
 sudo systemctl daemon-reload
 sudo systemctl enable wireguard-ui

@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=oneshot
 #ExecStartPost=/usr/local/bin/wg-all-sync.bash
-ExecStart=/usr/bin/systemctl restart wg-quick@wg-all.service
+ExecStart=/bin/systemctl restart wg-quick@wg-all.service
 
 [Install]
 RequiredBy=wg-all-restart.path
