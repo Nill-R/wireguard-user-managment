@@ -1,0 +1,8 @@
+[Unit]
+Description=Watch /etc/wireguard/wg-all.conf for changes
+
+[Path]
+PathModified=/etc/wireguard/wg-all.conf
+
+[Install]
+WantedBy=multi-user.target
