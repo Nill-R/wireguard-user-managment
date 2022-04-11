@@ -4,6 +4,11 @@ After=network.target
 
 [Service]
 Type=simple
+
+# Environment="SENDGRID_API_KEY=YOUR_API_KEY_HERE"
+# Environment="EMAIL_FROM_ADDRESS=YOUR_EMAIL_HERE"
+# Environment="EMAIL_FROM_NAME=YOUR_NAME_HERE"
+
 ExecStart=/usr/local/bin/wireguard-ui -bind-address 127.0.0.1:5000
 WorkingDirectory=/etc/wireguard/ui
 
